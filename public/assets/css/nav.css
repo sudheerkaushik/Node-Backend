@@ -1,0 +1,148 @@
+a {
+    color: #09f;
+}
+a:hover {
+    color: #007acc;
+}
+button {
+    -webkit-font-smoothing: antialiased;
+    background-color: #09f;
+    border: none;
+    border-radius: 0.1875em;
+    color: white;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    padding: .75em 1em;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Header
+  -------------------------- */
+
+.l-header {
+    height: 80px;
+    position: relative;
+    background: #585ef6;
+}
+.logo {
+    float: left;
+}
+.logo__title {
+    margin: 0;
+}
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    line-height: 1.5;
+    height: 80px;
+    color: #fff;
+    word-wrap: no-wrap;
+    width: 250px;
+    font-size: 25px;
+}
+.menu-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+@media (max-width: 768px) {
+    .logo {
+        float: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+/*  Menu
+  -------------------------- */
+
+.menu {
+    float: right;
+}
+.menu__list {
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu__item {
+    float: left;
+    text-align: center;
+    text-align: center;
+}
+.menu__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 5em;
+    height: 5em;
+    padding: 0 .9em;
+    word-wrap: no-wrap;
+    transition: all .3s ease;
+}
+.menu__link:hover,
+.menu__link:focus {
+    background: #09f;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .menu {
+        float: none;
+    }
+    .menu__item {
+        display: block;
+        float: none;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        transition: all .3s ease-out;
+    }
+    .menu__item--play {
+        display: block;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .menu__item+.menu__item {
+        border-top: 1px solid #008ae6;
+    }
+    .menu__link {
+        background: #09f;
+    }
+    .menu__link:hover {
+        background: #007acc;
+    }
+}
+
+/* Wrap
+  -------------------------- */
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+.l-main .wrap {
+    padding: 0 10px;
+}
+div#mocha {
+    position: fixed;
+    background-color: #fff;
+    width: 267px;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
